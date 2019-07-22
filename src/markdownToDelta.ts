@@ -67,6 +67,10 @@ export default function markdownToDelta(md: string): Op[] {
           insert: node.value,
           attributes: { ...op.attributes, font: "monospace" }
         };
+      } else if (node.type === "break") {
+        op = {
+          insert: "\n"
+        };
       } else {
         throw new Error(`Unsupported note type in paragraph: ${node.type}`);
       }
