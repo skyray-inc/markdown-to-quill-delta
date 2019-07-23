@@ -1,0 +1,6 @@
+[
+  { "insert": "this is the first line, with two spaces at the end" },
+  { "insert": "\n" },
+  { "insert": "this is the second line" },
+  { "insert": "\n" }
+]
